@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="skillsPage.css">
+    <link rel="shortcut icon" type="x-icon" href="doge.png">
+    <title>My portfolio</title>
+</head>
+<style>
+    header{
+        background-color: rgb(17, 40, 74);
+    }
+    .dark-mode{
+        background-color: rgb(17, 40, 74);
+        color: white;
+    }
+    .toogle_color{
+        background-color: rgb(22, 170, 216);
+        border: none;
+        color: white;
+        font-weight: bold;
+        border-radius: 15px;
+        cursor: pointer;
+        padding: 10px;
+    }
+</style>
+<body>
+    <header id="head_color">
+        <div class="navbar_content">
+            <a href="index.html"><img src="logo.jpg" alt="" class="navbar_images" width="auto" height="90px"></a>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projectsPage.html">Projects</a></li>
+                <li><a href="contactMe.html">Contact Me</a></li>
+                <button class="toogle_color" onclick="myFunction()">Alternate Color</button>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <h1 class="header">My Skills</h1>
+        <div class="grid-container">
+            <div class="grid-item">
+                <h1><img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png" alt="" width="100px"></h1>
+                <p>
+                    The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It defines the content and structure of web content.
+                </p>
+            </div>
+            <div class="grid-item">
+                <h1><img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png" alt="" width="100px"></h1>
+                <p>
+                    Cascading Style Sheets (CSS) is a style sheet language used for specifying the presentation and styling of a document written in a markup language such as HTML or XML.
+                </p>
+            </div>
+            <div class="grid-item">
+                <h1><img src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_1280.png" alt="" width="100px"></h1>
+                <p>
+                    JavaScript, often abbreviated as JS, is a programming language and core technology of the World Wide Web, alongside HTML and CSS. All major web browsers have a dedicated JavaScript engine to execute the code on users' devices.
+                </p>
+            </div>
+            <div class="grid-item">
+                <h1><img src="https://th.bing.com/th/id/OIP.N8I37NOZq_YHbChQzoqwYAHaHv?rs=1&pid=ImgDetMain" alt="" width="100px"></h1>
+                <p>
+                    Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation.
+                </p>
+            </div>
+            <div class="grid-item">
+                <h1><img src="https://th.bing.com/th/id/OIP.h9ccCdmWiGUHQCR9svOzKwHaHa?rs=1&pid=ImgDetMain" alt="" width="100px"></h1>
+                <p>
+                    You can always be bigger and oilier. PUMP IT. PUMP IT. PUMP IT. PUMP IT.
+                </p>
+            </div>
+            <div class="grid-item">
+                <h1><img src="https://th.bing.com/th/id/OIP.BYj_CE42nDwKtHNbx4kbigAAAA?rs=1&pid=ImgDetMain" alt="" width="100px"></h1>
+                <p>
+                    SQL is a domain-specific language used in programming and designed for managing data held in a relational database management system (RDBMS).
+                </p>
+            </div>
+        </div>
+    </main>
+</body>
+<script>
+    function myFunction() {
+       var element = document.body;
+       element.classList.toggle("dark-mode");
+    }
+</script>
+</html>

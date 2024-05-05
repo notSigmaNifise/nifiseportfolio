@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: none;
+    padding: none;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    color: var(--font_color); 
+}
+:root{
+    --font_color: black;
+    --alt_color: rgb(22, 170, 216);
+    --main_color: rgb(17, 40, 74);
+}
+header{
+    font-size: 150%;
+    background-color: rgb(17, 40, 74);
+}
+header div {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 80px;
+}
+header div ul{ 
+    display: flex;
+    gap: 100px;
+    align-items: center;    
+}
+header li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+header li>a{
+    text-decoration: none;
+    color: white;
+}
+
+header li::after{
+    content: '';
+    height: 2px;
+    width: 0%;
+    background-color: var(--alt_color);
+    position: absolute;
+    bottom: -5%;
+    left: 0;
+    transition: 0.5s ;
+}
+header li:hover::after{
+    width: 100%;
+}
+
+
+main{
+    position: absolute;
+    left: 50%;
+    -o-transform: translate(-50%);   
+    -ms-transform: translate(-50%);   
+    -moz-transform: translate(-50%);   
+    -webkit-transform: translate(-50%); 
+    width: 90%;
+}
+
+.grid-container {
+    margin-bottom: 15vh;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: auto auto auto ;
+    /* border: 0.1px solid; */
+}
+.grid-item {
+    /* border: 1px solid; */
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.header{
+    text-align: center;
+    text-decoration: underline rgb(17, 40, 74);
+    padding: 30px;
+}
+
+
+@media only screen and (max-width: 850px) {
+    :root{
+        --font_color: black;
+        --alt_color: rgb(22, 170, 216);
+        --main_color: rgb(17, 40, 74);
+    }
+    body{
+        color: var(--font_color); 
+    }
+    header{
+        font-size: 90%;
+        background-color: var(--main_color);
+    }
+    header div {
+        display: flex;
+        padding: 0px 0px;
+        justify-content: center;
+    }
+    header div ul{ 
+        display: flex;
+        align-items: center;   
+        gap: 50px;
+    }
+    .navbar_images{display: none;}
+
+    main{
+        width: 90%;
+    }
+    .grid-container {
+        margin-bottom: 1vh;
+        display: grid;
+        gap: 0px;
+        grid-template-columns: auto auto;
+    }
+    .grid-item {
+        padding: 0px;
+        font-size: 15px;
+        text-align: center;
+        padding: 10px;
+    }
+    .header{
+        text-align: center;
+        text-decoration: underline rgb(17, 40, 74);
+        padding: 0px;
+    }
+    .toogle_color{display: none;}
+
+}
+@media only screen and (max-width: 450px) {
+    .grid-container {
+        grid-template-columns: auto ;
+    }
+}
+
+
+

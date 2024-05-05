@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="shortcut icon" type="x-icon" href="doge.png">
+    <title>My portfolio</title>
+</head>
+<style>
+    header{
+        background-color: rgb(17, 40, 74);
+    }
+    .dark-mode{
+        background-color: rgb(17, 40, 74);
+        color: white;
+    }
+    .toogle_color{
+        background-color: rgb(22, 170, 216);
+        border: none;
+        color: white;
+        font-weight: bold;
+        border-radius: 15px;
+        cursor: pointer;
+        padding: 10px;
+    }
+</style>
+<body>
+    <header id="head_color">
+        <div class="navbar_content">
+            <a href="index.html"><img src="logo.jpg" alt="Derby college logo" class="navbar_image" width="auto" height="100px"></a>
+            <ul class="navbar">
+                <li><a href="projectsPage.html">Projects</a></li>
+                <li><a href="skillsPage.html">Skills</a></li>
+                <li><a href="contactMe.html">Contact Me</a></li>
+                <button class="toogle_color" onclick="myFunction()">Alternate Color</button>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="home_page">
+            <div>
+                <div class="grey_text">Hello! I'm</div>
+                <div class="big_text">Nifise Agboola</div>
+                <div class="main_home_page_text">
+                    Welcome to my portfolio! 
+                    I'm a tech enthusiast skilled in Python, HTML, CSS, and SQL. 
+                    Beyond coding, you'll find me at the gym, mastering both body and mind. 
+                    I bring creativity to the kitchen and am dedicated to advancing my IT education through the BTEC National Foundation Diploma. 
+                    Explore to see my unique blend of tech expertise and diverse interests.
+                </div>
+                <a href="projectsPage.html" class="my_works" ><button>My works</button></a>
+            </div>
+            <img src="doge.png" alt="" class="nifise_image">
+        </div>
+    </main>
+</body>
+<script>
+    function myFunction() {
+       var element = document.body;
+       element.classList.toggle("dark-mode");
+    }
+</script>
+</html>
+
+
+
+
+
+
+
+

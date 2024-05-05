@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: none;
+    padding: none;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    color: var(--font_color); 
+}
+:root{
+    --font_color: black;
+    --alt_color: rgb(22, 170, 216);
+    --main_color: rgb(17, 40, 74);
+}
+header{
+    font-size: 150%;
+    background-color: rgb(17, 40, 74);
+}
+header div {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 80px;
+}
+header div ul{ 
+    display: flex;
+    gap: 100px;
+    align-items: center;    
+}
+header li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+header li>a{
+    text-decoration: none;
+    color: white;
+}
+
+header li::after{
+    content: '';
+    height: 2px;
+    width: 0%;
+    background-color: var(--alt_color);
+    position: absolute;
+    bottom: -5%;
+    left: 0;
+    transition: 0.5s ;
+}
+header li:hover::after{
+    width: 100%;
+}
+
+
+main{
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    -o-transform: translate(-50%);   
+    -ms-transform: translate(-50%);   
+    -moz-transform: translate(-50%);   
+    -webkit-transform: translate(-50%); 
+    margin-top: 5vh;
+}
+
+    main div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+main div img{
+    height: 200px;
+    margin: 0.5px;
+    transition: all 0.4s ease-out;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+main div img:hover{
+    -o-transform: scale(1.1);   
+    -ms-transform: scale(1.1);   
+    -moz-transform: scale(1.1);   
+    -webkit-transform: scale(1.1);  
+    z-index: 100;
+}
+
+.heading{
+    text-align: center;
+}
+@media only screen and (max-width: 850px) {
+    :root{
+        --font_color: black;
+        --alt_color: rgb(22, 170, 216);
+        --main_color: rgb(17, 40, 74);
+    }
+    body{
+        color: var(--font_color); 
+    }
+    header{
+        font-size: 90%;
+        background-color: var(--main_color);
+    }
+    header div {
+        display: flex;
+        padding: 0px 0px;
+        justify-content: center;
+    }
+    header div ul{ 
+        display: flex;
+        align-items: center;   
+        gap: 50px;
+    }
+    .navbar_images{display: none;}
+    main{
+        width: 95%;
+        margin-top: 1vh;
+    }
+    .toogle_color{display: none;}
+
+}
+
+
+
+
+

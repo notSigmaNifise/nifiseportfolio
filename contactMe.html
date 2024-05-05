@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contactMe.css">
+    <link rel="shortcut icon" type="x-icon" href="doge.png">
+    <script src="https://kit.fontawesome.com/4e1af1d338.js" crossorigin="anonymous"></script> 
+    <title>My portfolio</title>
+</head>
+<style>
+    header{
+        background-color: rgb(17, 40, 74);
+    }
+    .dark-mode{
+        background-color: rgb(17, 40, 74);
+        color: white;
+    }
+    .toogle_color{
+        background-color: rgb(22, 170, 216);
+        border: none;
+        color: white;
+        font-weight: bold;
+        border-radius: 15px;
+        cursor: pointer;
+        padding: 10px;
+    }
+</style>
+<body>
+    <header id="head_color">
+        <div class="navbar_content">
+            <a href="index.html"><img src="logo.jpg" alt="" class="navbar_images" width="auto" height="90px"></a>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projectsPage.html">Projects</a></li>
+                <li><a href="skillsPage.html">Skills</a></li>
+                <button class="toogle_color" onclick="myFunction()">Alternate Color</button>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="contact_me">
+            <h1>E-MAIL ME!!!</h1>
+
+            <form action="index.php" class="contact_form" method="post" id="frm">
+                <input type="text" placeholder="Give your name" id="" class="form_input" required name="name">
+                <input type="email" placeholder="Give email" id="" class="form_input" required name="email">
+                <textarea name="" id="" cols="20" rows="10" placeholder="What's on your mind?" required name="message"></textarea>
+                <input type="submit" value="Send message" class="submit_button">
+                <input type="button" value="Reset" class="reset_button" onclick="myfrmFunction()">
+            </form>
+
+            <div class="social_media grid_container">
+                <div class="grid-item"><a href="#" >
+                    <i class="fa-solid fa-phone" style="color: #00850f;"></i>
+                </a></div>
+                <div class="grid-item"><a href="#">
+                    <i class="fa-brands fa-facebook" style="color: #0051ff;"></i>
+                </a></div>
+                <div class="grid-item"><a href="https://twitter.com/">
+                    <i class="fa-brands fa-x-twitter" style="color: #000000;"></i>
+                </a></div>
+                <div class="grid-item"><a href="https://www.instagram.com/">
+                    <i class="fa-brands fa-instagram" style="color: #b11bda;"></i>            
+                </a></div>
+            </div>
+        </div>
+    </main>
+    <script>
+        function myfrmFunction() {
+            document.getElementById("frm").reset();
+        }
+        function myFunction() {
+       var element = document.body;
+       element.classList.toggle("dark-mode");
+    }
+    </script>
+</body>

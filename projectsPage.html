@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projectsPage.css">
+    <link rel="shortcut icon" type="x-icon" href="doge.png">
+    <title>My portfolio</title>
+</head>
+<style>
+    header{
+        background-color: rgb(17, 40, 74);
+    }
+    .dark-mode{
+        background-color: rgb(17, 40, 74);
+        color: white;
+    }
+    .toogle_color{
+        background-color: rgb(22, 170, 216);
+        border: none;
+        color: white;
+        font-weight: bold;
+        border-radius: 15px;
+        cursor: pointer;
+        padding: 10px;
+    }
+</style>
+<body>
+    <header id="head_color">
+        <div class="navbar_content">
+            <a href="index.html" ><img src="logo.jpg" alt="" class="navbar_images" width="auto" height="90px"></a>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skillsPage.html">Skills</a></li>
+                <li><a href="contactMe.html">Contact Me</a></li>
+                <button class="toogle_color" onclick="myFunction()">Alternate Color</button>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="heading">My Projects</h1>
+        
+        <div>
+            <img src="pexels-adam-krypel.jpg" alt="">
+            <img src="pexels-miguel-á-padriñán.jpg" alt="">
+            <img src="pexels-desativado.jpg" alt="">
+            <img src="pexels-luis-dalvan.jpg" alt="">
+            <img src="pexels-peter-fazekas.jpg" alt="">
+            <img src="pexels-henry-han.jpg" alt="">
+            <img src="pexels-pixabay.jpg" alt="">
+            <img src="pexels-dung-lee.jpg" alt="">
+            <img src="pexels-pixabay2.jpg" alt="">
+            <img src="pexels-jefe-king.jpg" alt="">
+            <img src="pexels-joem-castillo.jpg" alt="">
+            <img src="pexels-pixabay3.jpg" alt="">
+        </div>
+    </main>
+</body>
+<script>
+    function myFunction() {
+       var element = document.body;
+       element.classList.toggle("dark-mode");
+    }
+</script>
+</html>
